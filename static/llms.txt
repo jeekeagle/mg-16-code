@@ -1,0 +1,12 @@
+# TODO: 编辑此文件为 LLM 提供站点入口和文档索引
+# 参考格式：https://llmstxt.org/
+
+# <项目名>
+# 一句话简介
+
+- 站点首页：https://your-domain/
+- 文档：https://your-domain/
+
+## 文档目录
+- 安装：https://your-domain/getting-started/installation
+- 快速开始：https://your-domain/getting-started/quickstart

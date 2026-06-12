@@ -1,0 +1,180 @@
+/**
+ * 首页样式。
+ * 颜色都用 CSS 变量，跟随 custom.css 里的 --ifm-color-primary 变化。
+ */
+
+/* ============ Hero ============ */
+.heroBanner {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  margin: 0.5rem 0 1rem;
+  opacity: 0.85;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* ============ CTA 按钮 ============ */
+.ctaRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+.ctaPrimary:hover {
+  filter: brightness(1.08);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+.ctaSecondary:hover {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ============ 通用区段 ============ */
+.installSection,
+.featuresSection,
+.highlightsSection,
+.llmSection {
+  padding: 3rem 0;
+}
+
+.llmSection {
+  padding-bottom: 4rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.codeBlock {
+  background: var(--ifm-pre-background);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.note {
+  font-size: 0.92rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+/* ============ Features 网格 ============ */
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.featureCard {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.featureCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  color: inherit;
+}
+.featureEmoji {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.featureTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+.featureDesc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* ============ Highlights 详细列表 ============ */
+.highlightList {
+  list-style: none;
+  padding: 0;
+  max-width: 880px;
+  margin: 1.5rem auto 0;
+}
+.highlightList li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+.highlightList li:last-child {
+  border-bottom: none;
+}
+
+/* ============ LLM 入口 ============ */
+.llmSection ul {
+  list-style: none;
+  padding: 0;
+}
+.llmSection li {
+  padding: 0.4rem 0;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.92rem;
+}
