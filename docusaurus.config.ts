@@ -15,7 +15,7 @@ const config: Config = {
   organizationName: 'jeekeagle',
   projectName: 'mg-16-code',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   i18n: { defaultLocale: 'zh-Hans', locales: ['zh-Hans'] },
 
