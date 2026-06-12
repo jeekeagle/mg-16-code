@@ -1,5 +1,4 @@
-<!-- 管理者的十六字心法 · Logo：朱砂红印泥风格 + 「心」字 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect x="2" y="2" width="28" height="28" rx="3" fill="#b1391d"/>
+  <rect x="2" y="2" width="28" height="28" rx="4" fill="#b1391d"/>
   <text x="16" y="22" text-anchor="middle" font-family="'Songti SC', 'Noto Serif SC', serif" font-size="18" fill="#fff" font-weight="700">心</text>
 </svg>

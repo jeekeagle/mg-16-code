@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: '管理学的十六字心法',
-  tagline: '管理之道，十六字以概之',
-  favicon: 'img/favicon.ico',
+  title: '管理者的十六字心法',
+  tagline: '人心惟危，道心惟微；惟精惟一，允执厥中',
+  favicon: 'img/favicon.svg',
 
   future: { v4: true },
 
@@ -35,20 +35,38 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/social-card.png',
-    colorMode: { respectPrefersColorScheme: true },
+    colorMode: { respectPrefersColorScheme: true, defaultMode: 'light' },
     navbar: {
-      title: '管理学的十六字心法',
-      logo: { alt: 'Logo', src: 'img/logo.svg' },
+      title: '管理者的十六字心法',
+      logo: { alt: '心', src: 'img/logo.svg' },
       items: [
-        { type: 'docSidebar', sidebarId: 'docsSidebar', position: 'left', label: '文档' },
+        { to: '/', label: '首页', position: 'left' },
+        { to: '/01-intro/intro', label: '开始阅读', position: 'left' },
+        { to: '/06-part-five/19-chapter-19', label: '十六字心法', position: 'left' },
         { href: 'https://github.com/jeekeagle/mg-16-code', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
-      links: [{ title: '文档', items: [{ label: '快速开始', to: '/getting-started/quickstart' }] }],
-      copyright: `Copyright © ${new Date().getFullYear()} jeekeagle. Built with Docusaurus.`,
+      links: [
+        {
+          title: '本书',
+          items: [
+            { label: '引言', to: '/01-intro/intro' },
+            { label: '第一编 · 起点', to: '/02-part-one/01-chapter-1' },
+            { label: '第五编 · 十六字心法', to: '/06-part-five/19-chapter-19' },
+            { label: '后记', to: '/06-part-five/21-postscript' },
+          ],
+        },
+        {
+          title: '更多',
+          items: [
+            { label: 'GitHub 仓库', href: 'https://github.com/jeekeagle/mg-16-code' },
+            { label: '完整索引', to: '/llms.txt' },
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} jeekeagle · 人心惟危，道心惟微；惟精惟一，允执厥中`,
     },
     prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
   } satisfies Preset.ThemeConfig,
