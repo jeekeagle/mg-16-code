@@ -119,7 +119,7 @@ const PARTS = [
     label: '第五编',
     title: '十六字心法',
     chapters: '第十五章 ~ 第十九章',
-    to: '/06-part-five/15-chapter-15',
+    to: '/part-five/chapter-15',
     desc: '为什么只走一条路必死。动态校准——允执厥中怎么做。',
   },
 ];

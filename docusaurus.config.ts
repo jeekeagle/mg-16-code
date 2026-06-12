@@ -41,8 +41,8 @@ const config: Config = {
       logo: { alt: '心', src: 'img/logo.svg' },
       items: [
         { to: '/', label: '首页', position: 'left' },
-        { to: '/01-intro/intro', label: '开始阅读', position: 'left' },
-        { to: '/06-part-five/19-chapter-19', label: '十六字心法', position: 'left' },
+        { to: '/intro/intro', label: '开始阅读', position: 'left' },
+        { to: '/part-five/chapter-19', label: '十六字心法', position: 'left' },
         { href: 'https://github.com/jeekeagle/mg-16-code', label: 'GitHub', position: 'right' },
       ],
     },
@@ -52,10 +52,10 @@ const config: Config = {
         {
           title: '本书',
           items: [
-            { label: '引言', to: '/01-intro/intro' },
-            { label: '第一编 · 起点', to: '/02-part-one/01-chapter-1' },
-            { label: '第五编 · 十六字心法', to: '/06-part-five/19-chapter-19' },
-            { label: '后记', to: '/06-part-five/21-postscript' },
+            { label: '引言', to: '/intro/intro' },
+            { label: '第一编 · 起点', to: '/part-one/chapter-1' },
+            { label: '第五编 · 十六字心法', to: '/part-five/chapter-19' },
+            { label: '后记', to: '/part-five/postscript' },
           ],
         },
         {
