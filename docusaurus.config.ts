@@ -36,6 +36,12 @@ const config: Config = {
 
   themeConfig: {
     colorMode: { respectPrefersColorScheme: true, defaultMode: 'light' },
+    // 强制浏览器每次重新拉取，规避 GitHub Pages CDN 缓存
+    metadata: [
+      { name: 'Cache-Control', content: 'no-cache, no-store, must-revalidate' },
+      { name: 'Pragma', content: 'no-cache' },
+      { name: 'Expires', content: '0' },
+    ],
     navbar: {
       title: '管理者的十六字心法',
       logo: { alt: '心', src: 'img/logo.svg' },
