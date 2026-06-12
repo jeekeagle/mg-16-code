@@ -26,10 +26,10 @@ function HomepageHeader() {
           三千年制度史的试错链，落到今天的管理桌上，是这十六个字。
         </p>
         <div className={styles.ctaRow}>
-          <Link to="/01-intro/intro" className={styles.ctaPrimary}>
+          <Link to="/intro/intro" className={styles.ctaPrimary}>
             从引言开始读 →
           </Link>
-          <Link to="/06-part-five/19-chapter-19" className={styles.ctaSecondary}>
+          <Link to="/part-five/chapter-19" className={styles.ctaSecondary}>
             直接看十六字心法
           </Link>
         </div>
@@ -91,28 +91,28 @@ const PARTS = [
     label: '第一编',
     title: '起点：人心不可靠',
     chapters: '第一章 ~ 第四章',
-    to: '/02-part-one/01-chapter-1',
+    to: '/part-one/chapter-1',
     desc: '周公从牧野之战看到人心不可靠，编了一张叫礼制的网。',
   },
   {
     label: '第二编',
     title: '文化管理的失灵',
     chapters: '第五章 ~ 第七章',
-    to: '/03-part-two/05-chapter-5',
+    to: '/part-two/chapter-5',
     desc: '礼制僵化、脱离现实。文化变口号，人心变表演。',
   },
   {
     label: '第三编',
     title: '制度管理的失灵',
     chapters: '第八章 ~ 第十章',
-    to: '/04-part-three/08-chapter-8',
+    to: '/part-three/chapter-8',
     desc: '秦亡五因、KPI 溃散。只靠法统，撑不住。',
   },
   {
     label: '第四编',
     title: '礼法再合',
     chapters: '第十一章 ~ 第十四章',
-    to: '/05-part-four/11-chapter-11',
+    to: '/part-four/chapter-11',
     desc: '秦塑形，汉塑魂。文化与制度指向同一个方向。',
   },
   {
